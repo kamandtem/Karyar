@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#3CA2F3">
+    <meta name="theme-color" content="#3CBB5D">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -18,11 +18,11 @@
 
 :root {
     /* Brand */
-    --primary: #3CA2F3;
-    --primary-dark: #2B8ADE;
-    --primary-darker: #1F6FB8;
-    --primary-light: #E8F4FE;
-    --primary-light-2: #D2E9FC;
+    --primary: #3CBB5D;
+    --primary-dark: #089E3F;
+    --primary-darker: #067B31;
+    --primary-light: #E8F7EC;
+    --primary-light-2: #D4F0DB;
     --secondary: #2F8FE0;
     --secondary-dark: #1E75C2;
     --accent: #4FA8FF;
@@ -39,9 +39,9 @@
     --stat-amber-2: #F5750F;
 
     /* Semantic */
-    --success: #3CA2F3;
-    --success-dark: #2B8ADE;
-    --success-light: #E8F4FE;
+    --success: #3CBB5D;
+    --success-dark: #089E3F;
+    --success-light: #E8F7EC;
     --warning: #FFB020;
     --warning-dark: #B9740A;
     --warning-light: #FFF3DE;
@@ -69,7 +69,7 @@
     --shadow-sm: 0 4px 14px rgba(20, 30, 25, 0.06);
     --shadow-md: 0 10px 28px rgba(20, 30, 25, 0.09);
     --shadow-lg: 0 18px 44px rgba(20, 30, 25, 0.14);
-    --shadow-primary: 0 10px 24px rgba(60, 162, 243, 0.28);
+    --shadow-primary: 0 10px 24px rgba(8, 158, 63, 0.28);
 }
 
 * {
@@ -626,7 +626,7 @@ body {
     height: 52px;
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     border-color: transparent;
-    box-shadow: 0 10px 20px -4px rgba(60, 162, 243, 0.55), 0 0 0 5px var(--surface);
+    box-shadow: 0 10px 20px -4px rgba(8, 158, 63, 0.55), 0 0 0 5px var(--surface);
 }
 
 .nav-item.active .nav-item-badge svg {
@@ -664,7 +664,7 @@ body {
 
 .fab:active {
     transform: scale(0.94);
-    box-shadow: 0 6px 16px rgba(60, 162, 243, 0.3);
+    box-shadow: 0 6px 16px rgba(8, 158, 63, 0.3);
 }
 
 .fab-hidden {
@@ -952,12 +952,12 @@ body {
     box-shadow: var(--shadow-primary);
 }
 
-.btn-primary:active { box-shadow: 0 4px 12px rgba(60,162,243,0.25); }
+.btn-primary:active { box-shadow: 0 4px 12px rgba(8,158,63,0.25); }
 
 .btn-success {
     background: linear-gradient(135deg, var(--success) 0%, var(--success-dark) 100%);
     color: white;
-    box-shadow: 0 10px 24px rgba(60,162,243,0.22);
+    box-shadow: 0 10px 24px rgba(8,158,63,0.22);
 }
 
 .btn-text {
@@ -985,14 +985,14 @@ body {
 
 /* ===== Forms ===== */
 .form-group {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .form-label {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: var(--text-primary);
 }
 
@@ -1000,11 +1000,11 @@ body {
 .form-select,
 .form-textarea {
     width: 100%;
-    padding: 13px 14px;
+    padding: 9px 12px;
     border: 1.5px solid var(--border);
     border-radius: var(--radius-sm);
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.92rem;
     background: var(--surface-2);
     color: var(--text-primary);
     transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
@@ -1029,13 +1029,13 @@ body {
 }
 
 .form-textarea {
-    min-height: 100px;
+    min-height: 70px;
     resize: vertical;
 }
 
 .form-checkbox {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     accent-color: var(--primary);
 }
@@ -1045,7 +1045,7 @@ body {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    padding: 13px;
+    padding: 8px 10px;
     border-radius: var(--radius-sm);
     transition: background-color 0.15s ease;
 }
@@ -1189,24 +1189,24 @@ body {
 }
 
 .dialog-header {
-    padding: 20px 22px;
+    padding: 12px 16px;
     border-bottom: 1px solid var(--border-soft);
 }
 
 .dialog-title {
-    font-size: 1.15rem;
+    font-size: 1.02rem;
     font-weight: 800;
 }
 
 .dialog-content {
-    padding: 20px 22px;
+    padding: 12px 16px;
 }
 
 .dialog-actions {
     display: flex;
     gap: 8px;
-    justify-content: flex-start;
-    padding: 16px 22px;
+    justify-content: center;
+    padding: 10px 16px;
     border-top: 1px solid var(--border-soft);
 }
 
@@ -1601,7 +1601,7 @@ body {
 .service-item .ripple-effect,
 .money-btn.money-btn-minus .ripple-effect,
 .contact-sheet-option .ripple-effect {
-    background: rgba(60, 162, 243, 0.18);
+    background: rgba(8, 158, 63, 0.18);
 }
 
 @media (max-width: 360px) {
@@ -2084,13 +2084,13 @@ function printReportContent(title, htmlContent) {
             .card { border: 1px solid #E8ECEE; border-radius: 16px; padding: 18px; margin-bottom: 16px; background: #fff; }
             .bold { font-weight: 700; }
             .chip { display: inline-block; padding: 3px 12px; border-radius: 16px; font-size: 0.85rem; background: #EEF1F0; }
-            .chip-success { background: #E8F4FE; color: #2B8ADE; }
+            .chip-success { background: #E8F7EC; color: #089E3F; }
             .chip-error { background: #FDEAEA; color: #D64545; }
             .chip-warning { background: #FFF3DE; color: #B9740A; }
             .list-item { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #E8ECEE; }
             .list-item-title { font-weight: 500; }
             .list-item-subtitle { font-size: 0.875rem; color: #6B7280; }
-            .print-header { text-align: center; margin-bottom: 24px; border-bottom: 2px solid #3CA2F3; padding-bottom: 12px; }
+            .print-header { text-align: center; margin-bottom: 24px; border-bottom: 2px solid #089E3F; padding-bottom: 12px; }
             .no-print { display: none !important; }
             .date-report-hero { background: linear-gradient(135deg, #4E7CFF 0%, #2F54EB 100%); color: #fff; border-radius: 16px; padding: 16px; margin-bottom: 14px; }
             .date-report-hero-label { font-size: 0.8rem; opacity: 0.9; margin-bottom: 4px; }
@@ -2470,12 +2470,6 @@ const Workers = {
             </div>
             <div class="form-group">
                 <label class="checkbox-label">
-                    <input type="checkbox" name="isActive" class="form-checkbox" checked>
-                    <span>فعال</span>
-                </label>
-            </div>
-            <div class="form-group">
-                <label class="checkbox-label">
                     <input type="checkbox" name="isForeman" class="form-checkbox">
                     <span>سرکارگر است</span>
                 </label>
@@ -2493,7 +2487,6 @@ const Workers = {
                     gender: formData.get('gender'),
                     phone: formData.get('phone'),
                     cardNumber: formData.get('cardNumber'),
-                    isActive: formData.get('isActive') === 'on',
                     isForeman: formData.get('isForeman') === 'on'
                 };
                 
@@ -2545,12 +2538,6 @@ const Workers = {
             </div>
             <div class="form-group">
                 <label class="checkbox-label">
-                    <input type="checkbox" name="isActive" class="form-checkbox" ${worker.isActive ? 'checked' : ''}>
-                    <span>فعال</span>
-                </label>
-            </div>
-            <div class="form-group">
-                <label class="checkbox-label">
                     <input type="checkbox" name="isForeman" class="form-checkbox" ${worker.isForeman ? 'checked' : ''}>
                     <span>سرکارگر است</span>
                 </label>
@@ -2568,7 +2555,7 @@ const Workers = {
                     gender: formData.get('gender'),
                     phone: formData.get('phone'),
                     cardNumber: formData.get('cardNumber'),
-                    isActive: formData.get('isActive') === 'on',
+                    isActive: worker.isActive,
                     isForeman: formData.get('isForeman') === 'on'
                 };
                 
@@ -2694,7 +2681,7 @@ const Services = {
     },
     
     getFullName(service) {
-        return `${service.driverFirstName} ${service.driverLastName}`;
+        return `${service.driverFirstName} ${service.driverLastName}${service.carType ? ' - ' + service.carType : ''}`;
     },
     
     async getById(id) {
@@ -2733,7 +2720,7 @@ const Services = {
                     <div class="list-item" onclick="Services.showServiceDetails(${service.id})">
                         <div class="list-item-icon">🚌</div>
                         <div class="list-item-content">
-                            <div class="list-item-title">${service.driverFirstName} ${service.driverLastName} - ${service.carType}</div>
+                            <div class="list-item-title">${this.getFullName(service)}</div>
                             <div class="list-item-subtitle">
                                 ظرفیت: ${toPersianDigits(service.capacity)} نفر • 
                                 هزینه: ${formatMoneyWithSeparator(service.cost)} تومان
@@ -2771,10 +2758,6 @@ const Services = {
                 <input type="text" name="cardNumber" class="form-input" placeholder="6037-XXXX-XXXX-XXXX" maxlength="19">
             </div>
             <div class="form-group">
-                <label class="form-label">نوع ماشین</label>
-                <input type="text" name="carType" class="form-input" placeholder="مثال: ون سفید">
-            </div>
-            <div class="form-group">
                 <label class="form-label">ظرفیت (تعداد نفرات)</label>
                 <input type="number" name="capacity" class="form-input" value="15">
             </div>
@@ -2785,12 +2768,6 @@ const Services = {
                     <input type="number" name="cost" class="form-input money-input" value="800000" required>
                     <button type="button" class="money-btn money-btn-plus" onclick="adjustMoneyInput(this,50000)" aria-label="اضافه کردن ۵۰ هزار تومان">+</button>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="checkbox-label">
-                    <input type="checkbox" name="isActive" class="form-checkbox" checked>
-                    <span>فعال</span>
-                </label>
             </div>
         `;
         
@@ -2804,10 +2781,8 @@ const Services = {
                     driverLastName: formData.get('driverLastName'),
                     phone: formData.get('phone'),
                     cardNumber: formData.get('cardNumber'),
-                    carType: formData.get('carType'),
                     capacity: formData.get('capacity'),
-                    cost: formData.get('cost'),
-                    isActive: formData.get('isActive') === 'on'
+                    cost: formData.get('cost')
                 };
                 
                 if (!data.driverFirstName) {
@@ -2850,10 +2825,6 @@ const Services = {
                 <input type="text" name="cardNumber" class="form-input" value="${service.cardNumber || ''}" placeholder="6037-XXXX-XXXX-XXXX" maxlength="19">
             </div>
             <div class="form-group">
-                <label class="form-label">نوع ماشین</label>
-                <input type="text" name="carType" class="form-input" value="${service.carType || ''}" placeholder="مثال: ون سفید">
-            </div>
-            <div class="form-group">
                 <label class="form-label">ظرفیت (تعداد نفرات)</label>
                 <input type="number" name="capacity" class="form-input" value="${service.capacity}">
             </div>
@@ -2864,12 +2835,6 @@ const Services = {
                     <input type="number" name="cost" class="form-input money-input" value="${service.cost}" required>
                     <button type="button" class="money-btn money-btn-plus" onclick="adjustMoneyInput(this,50000)" aria-label="اضافه کردن ۵۰ هزار تومان">+</button>
                 </div>
-            </div>
-            <div class="form-group">
-                <label class="checkbox-label">
-                    <input type="checkbox" name="isActive" class="form-checkbox" ${service.isActive ? 'checked' : ''}>
-                    <span>فعال</span>
-                </label>
             </div>
         `;
         
@@ -2883,10 +2848,10 @@ const Services = {
                     driverLastName: formData.get('driverLastName'),
                     phone: formData.get('phone'),
                     cardNumber: formData.get('cardNumber'),
-                    carType: formData.get('carType'),
+                    carType: service.carType,
                     capacity: formData.get('capacity'),
                     cost: formData.get('cost'),
-                    isActive: formData.get('isActive') === 'on'
+                    isActive: service.isActive
                 };
                 
                 if (!data.driverFirstName) {
@@ -2942,7 +2907,7 @@ const Services = {
         
         const content = `
             <div class="card">
-                <h3>${this.getFullName(service)} - ${service.carType}</h3>
+                <h3>${this.getFullName(service)}</h3>
                 <p><strong>شماره تماس:</strong> ${service.phone || 'ثبت نشده'}</p>
                 <p><strong>شماره کارت:</strong> ${service.cardNumber ? toPersianDigits(service.cardNumber) : 'ثبت نشده'}</p>
                 <div class="divider"></div>
@@ -3275,7 +3240,7 @@ const Projects = {
                 <label class="checkbox-label">
                     <input type="checkbox" class="form-checkbox service-checkbox" data-service-id="${service.id}" data-cost="${service.cost}">
                     <div class="flex-1">
-                        <div class="bold">${service.driverFirstName} ${service.driverLastName} - ${service.carType}</div>
+                        <div class="bold">${Services.getFullName(service)}</div>
                         <div style="font-size: 0.875rem; color: var(--text-secondary);">
                             ظرفیت: ${toPersianDigits(service.capacity)} نفر • 
                             هزینه: ${formatMoneyWithSeparator(service.cost)} تومان
@@ -3398,7 +3363,7 @@ const Projects = {
                 const extraNote = ps.extraPay ? ` <span style="color: var(--primary-darker);">(شامل ${formatMoneyWithSeparator(ps.extraPay)} تومان اضافه‌کار)</span>` : '';
                 servicesHTML += `
                     <div class="report-row">
-                        <span>${service.driverFirstName} ${service.driverLastName} - ${service.carType}:</span>
+                        <span>${Services.getFullName(service)}:</span>
                         <span>${formatMoneyWithSeparator(ps.cost)} تومان${extraNote}</span>
                     </div>
                 `;
@@ -3566,7 +3531,7 @@ const ServicePayments = {
         const form = document.createElement('form');
         form.innerHTML = `
             <div class="card mb-md">
-                <h3>${Services.getFullName(service)} - ${service.carType}</h3>
+                <h3>${Services.getFullName(service)}</h3>
             </div>
             <div class="form-group">
                 <label class="form-label">مبلغ پرداختی (تومان)</label>
@@ -3856,7 +3821,7 @@ const Reports = {
         if (allServices.length > 0) {
             entityOptionsHTML += '<optgroup label="سرویس‌ها">';
             for (let s of allServices) {
-                entityOptionsHTML += `<option value="service:${s.id}">${Services.getFullName(s)} - ${s.carType}</option>`;
+                entityOptionsHTML += `<option value="service:${s.id}">${Services.getFullName(s)}</option>`;
             }
             entityOptionsHTML += '</optgroup>';
         }
@@ -4154,7 +4119,7 @@ const Reports = {
             if (usesInRange === 0 && paidInRange === 0) continue;
             
             rows.push({
-                name: `${Services.getFullName(service)} - ${service.carType}`,
+                name: `${Services.getFullName(service)}`,
                 uses: usesInRange,
                 income: incomeInRange,
                 paid: paidInRange,
@@ -4465,7 +4430,7 @@ const Reports = {
         
         const content = `
             <div class="card" id="entityLedgerContent">
-                <h3>${Services.getFullName(service)} - ${service.carType}</h3>
+                <h3>${Services.getFullName(service)}</h3>
                 <p style="color:var(--text-secondary); font-size:0.85rem;">بازه: ${toPersianDigits(startDate)} تا ${toPersianDigits(endDate)}</p>
                 <div class="divider"></div>
                 <div class="report-section">
@@ -4718,7 +4683,7 @@ const Reports = {
                     <div class="list-item-title"></div>
                 </div>
             `;
-            item.querySelector('.list-item-title').textContent = `${Services.getFullName(service)} - ${service.carType}`;
+            item.querySelector('.list-item-title').textContent = `${Services.getFullName(service)}`;
             item.onclick = () => {
                 document.querySelector('.dialog-overlay').remove();
                 Reports.showServiceReportFor(service.id);
@@ -4745,7 +4710,7 @@ const Reports = {
         
         const content = `
             <div class="card" id="serviceReportContent">
-                <h3>${Services.getFullName(service)} - ${service.carType}</h3>
+                <h3>${Services.getFullName(service)}</h3>
                 <div class="report-section">
                     <div class="report-row">
                         <span>تعداد استفاده:</span>
@@ -4921,7 +4886,7 @@ const Dashboard = {
             if (debt > 0) {
                 totalDebt += debt;
             }
-            serviceBalances.push({ id: service.id, name: `${Services.getFullName(service)} - ${service.carType}`, debt });
+            serviceBalances.push({ id: service.id, name: `${Services.getFullName(service)}`, debt });
         }
         
         // حساب سرکارگرها با هر کارفرما (کل طلب پروژه‌ها از کارفرما شامل دستمزد کارگران + هزینه سرویس + کارمزد سرکارگری - جدا از حساب شخصی/دستمزد سرکارگر)
